@@ -50,6 +50,13 @@ body{ background: $color-sky-blue;}
 	}
 }
 
+#instagram-images { 
+	.media-object { width: 40px; height: 40px;}
+	.media-body { font-size: 13px;
+		.instagram-author { font-size: 14px;
+		}
+	}
+}
 #twitter {
 	.tweets {padding: 0 0 20px 0; border-bottom: 1px solid #eee;}
 	ul { list-style: none; padding: 0; margin: 0;
@@ -70,7 +77,7 @@ body{ background: $color-sky-blue;}
 	padding: 20px;
 	.user-link-other-comment-name {}
 	ul { list-style: none; padding: 0; margin: 0;}
-	.media { background: lighten(#ebebeb, 4%); padding: 5px; margin: 3px 0 0 0;}
+	.media { background: lighten($color-sky-blue, 2%); padding: 5px; margin: 3px 0 0 0;}
 	.media-object { width: 40px; height: 40px;}
 	.media-heading { font-size: 14px;}
 	.media-body { font-size: 12px;
@@ -105,11 +112,17 @@ body{ background: $color-sky-blue;}
 } 
 
 .detail-sidebar {
+	margin-top: 10px;
 	h1 { font-size: 1em;}
 	ul { padding: 0; margin: 0 0 0 10px;}
 	ul li { list-style: none;}
 	ul li a{ color: $color-red; font-size: .9em;}
  }
+
+.friends-using-hashtag {
+	li {float: left; margin: 5px 0 0 5px; }
+	img { width: 30px; height: 30px;}
+}
 
 .other-sources-tabs { margin: 20px 0 0 0; 
 	li{ font-size: .8em;}

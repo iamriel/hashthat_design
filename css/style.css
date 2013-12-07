@@ -28,6 +28,10 @@ body { background: #e3f3fa; }
 .details-page .tab-content #twitter { padding: 20px; }
 .details-page .tab-content #instagram-images { padding: 20px; }
 
+#instagram-images .media-object { width: 40px; height: 40px; }
+#instagram-images .media-body { font-size: 13px; }
+#instagram-images .media-body .instagram-author { font-size: 14px; }
+
 #twitter .tweets { padding: 0 0 20px 0; border-bottom: 1px solid #eee; }
 #twitter ul { list-style: none; padding: 0; margin: 0; }
 #twitter ul .tweet-image-link { float: left; width: 50px; height: 50px; display: inline-block; float: left; }
@@ -39,7 +43,7 @@ body { background: #e3f3fa; }
 
 #comments { padding: 20px; }
 #comments ul { list-style: none; padding: 0; margin: 0; }
-#comments .media { background: whitesmoke; padding: 5px; margin: 3px 0 0 0; }
+#comments .media { background: #ecf7fc; padding: 5px; margin: 3px 0 0 0; }
 #comments .media-object { width: 40px; height: 40px; }
 #comments .media-heading { font-size: 14px; }
 #comments .media-body { font-size: 12px; }
@@ -59,10 +63,14 @@ body { background: #e3f3fa; }
 .add-meaning .meaning-text-area { width: 300px; box-shadow: 0 0 0 10px #f4f2f2; border: 1px solid #a9a9a9; margin: 20px 0 0 20px; }
 .add-meaning .add-meaning-btn { margin: 20px 0 0 20px; padding: 5px 20px; }
 
+.detail-sidebar { margin-top: 10px; }
 .detail-sidebar h1 { font-size: 1em; }
 .detail-sidebar ul { padding: 0; margin: 0 0 0 10px; }
 .detail-sidebar ul li { list-style: none; }
 .detail-sidebar ul li a { color: #d03a3a; font-size: .9em; }
+
+.friends-using-hashtag li { float: left; margin: 5px 0 0 5px; }
+.friends-using-hashtag img { width: 30px; height: 30px; }
 
 .other-sources-tabs { margin: 20px 0 0 0; }
 .other-sources-tabs li { font-size: .8em; }

@@ -29,13 +29,14 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <form class="navbar-form navbar-left" role="search">
-                            <div class="form-group header-search">
-                                <input type="text" class="form-control search-input" placeholder="Search for people, tags, and meaning">
-                            </div>
-                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                        </form>
-
+                       <li>
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group header-search">
+                                    <input type="text" class="form-control search-input" placeholder="Search for people, tags, and meaning">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </form>
+                        </li> 
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -44,7 +45,7 @@
 
         <div class="container main">
             <div class="row">
-                <div class="col-xs-12 col-md-8 details-page">
+                <div class="col-xs-12 col-md-9 details-page">
                     <h1>What is the meaning of #TestHashTag?</h1>   
                     
                     <div class="row">
@@ -139,11 +140,50 @@
                                 </div>
 
                                 <div class="tab-pane" id="instagram-images">
-                                    <img src="http://placekitten.com/200/300" alt="">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                            <br>
+                                            <img src="http://placekitten.com/200/300" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                            <br>
+                                            <img src="http://placekitten.com/200/300" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                            <br>
+                                            <img src="http://placekitten.com/200/300" alt="">
+                                        </div>
+                                    </div>
+
+
                                 </div>
+
                                 <div class="tab-pane" id="facebook">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, ab, tenetur culpa quisquam nam quas beatae fugit placeat fuga provident.
+                                    
+
+
                                 </div>
+
+
                                 <div class="tab-pane" id="twitter">
                                     
                                     <ul>
@@ -219,7 +259,7 @@
                                         </li>
                                     </ul>
 
-                                    <p class="text-center"><a href="#" class="">Load more</a></p>
+                                    <p class="text-center"><a href="#" class=""  data-loading-text="Loading..." >Load more</a></p>
                                 </div>
                             </div>
                         </div>
@@ -239,16 +279,49 @@
 
 
                 </div><!--end details-page-->
-                <aside class="detail-sidebar md-offset-1 col-xs-6 col-md-4 ">
-                    <h1>Similar Hashtags</h1> 
-                    <ul>
-                        <li><a href="">#AnotherHashtag</a></li>
-                        <li><a href="">#Pasmo</a></li>
-                        <li><a href="">#BangonTacloban</a></li>
-                        <li><a href="">#Wooohwoohh</a></li>
-                        <li><a href="">#HashtagBaybeeey!</a></li>
-                        
-                    </ul>  
+                <aside class="detail-sidebar md-offset-1 col-xs-6 col-md-3">
+                    <div>
+                        <h1>Similar Hashtags</h1> 
+                        <ul>
+                            <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, alias.">#AnotherHashtag</a></li>
+                            <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, corporis!">#Pasmo</a></li>
+                            <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, omnis?">#BangonTacloban</a></li>
+                            <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, minus.">#Wooohwoohh</a></li>
+                            <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, laudantium.">#HashtagBaybeeey!</a></li>
+
+     
+                            <li>
+                            
+
+                                <a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="ashshgsffs">Hover me for a tooltip</a>
+
+                            </li>
+                        </ul> 
+
+                       
+                    </div> 
+
+                     <div class="friends-using-hashtag">
+                        <h1>Friends using #TestHashtag</h1> 
+                        <ul>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li> 
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li> 
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li> 
+
+
+                                                
+                        </ul> 
+
+                    </div> 
                 </aside><!--end detail-sidebar-->
             </div>       
         </div> 
@@ -260,5 +333,6 @@
         <script src="https://code.jquery.com/jquery.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
