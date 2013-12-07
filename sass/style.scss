@@ -1,0 +1,131 @@
+/*
+	Start Hashthat!
+*/
+
+
+/*
+	Variables
+*/
+
+$color-white: #fff;
+$color-lighter-blue : #0087c7; 
+$color-blue : #19558d;
+$color-red: #d13c3c;
+$color-light-gray : #fafafa;
+$color-gray: #ebebeb;
+$color-red: #d03a3a;
+$color-sky-blue : #e3f3fa;
+
+body{ background: $color-sky-blue;}
+
+/*
+	Header
+*/
+.navbar-default { background: #d03a3a;}
+.navbar-default .navbar-brand {color: $color-white;}
+
+.header-search { 
+	.search-input { width: 400px;}
+}
+
+
+.main { background: $color-white; margin-top: 60px;}
+
+.details-page { 
+
+	h1 { color: #404040; font-size: 1.6em;}
+	.definition-container { background: #EBEBEB; padding: 20px 0; overflow: hidden;}	
+	.hash-name { color: $color-red; font-size: 1.4em; margin: 0 0 10px 15px;}
+	.hash-definition{ margin: 0 0 0 30px; font-size: 1.2em;}
+	
+	.user-profile  {}
+	.img-thumbnail { width:40px; height: 40px; padding: 2px;}
+	.user-link { color:$color-blue; font-weight: bold; font-size: 11px;}
+
+
+	.tab-content { background: $color-white; border: 1px solid #DDDDDD; border-top:none; font-size: .9em;
+		#facebook {padding: 20px;}
+		#twitter {padding: 20px;}
+		#instagram-images {padding: 20px;}
+	}
+}
+
+#twitter {
+	.tweets {padding: 0 0 20px 0; border-bottom: 1px solid #eee;}
+	ul { list-style: none; padding: 0; margin: 0;
+		.tweet-image-link { float: left; width: 50px; height: 50px; display: inline-block; float: left; }
+		.tweet-image { width: 50px; height: 50px;}
+	}
+	.tweet-container { 
+		padding: 0 0 0 70px;
+		h3 { font-size: 1.4em; color: #0088CC; font-weight: bold; }
+		p { font-size: 12px;}
+	}
+
+	.load-more { margin: 0 auto; width: 100px;}
+
+}
+#comments {
+
+	padding: 20px;
+	.user-link-other-comment-name {}
+	ul { list-style: none; padding: 0; margin: 0;}
+	.media { background: lighten(#ebebeb, 4%); padding: 5px; margin: 3px 0 0 0;}
+	.media-object { width: 40px; height: 40px;}
+	.media-heading { font-size: 14px;}
+	.media-body { font-size: 12px;
+		.comment-author { font-weight: bold;
+		}
+	}
+
+	.comment-time { padding:5px 0; font-size: 11px; color: darken($color-gray, 40%);}
+	.comment-like{ font-size: 11px; margin: 0 0 0 10px;}
+}
+
+@mixin vote-hover {text-decoration: none; cursor: pointer; }
+.vote-container {
+	position: relative;
+	.vote-up {position: absolute; top: 0px; display: block;
+		&:hover { @include vote-hover;}
+	}
+	.vote-count{font-size: 19px; position: absolute; top: 15px; display: inline-block; margin: 0 auto;
+		
+	}
+	.vote-down{ position: absolute; top: 40px;
+		&:hover { @include vote-hover;}
+	}
+}
+
+.add-meaning {
+	h2 { font-size: 1em;}
+	.hash-name {color: $color-red; font-size: .9em;}
+	.meaning-text-area { width: 300px; box-shadow: 0 0 0 10px #f4f2f2;  border: 1px solid #a9a9a9; margin: 20px 0 0 20px;}
+	.add-meaning-btn { margin: 20px 0 0 20px; padding: 5px 20px;}
+	
+} 
+
+.detail-sidebar {
+	h1 { font-size: 1em;}
+	ul { padding: 0; margin: 0 0 0 10px;}
+	ul li { list-style: none;}
+	ul li a{ color: $color-red; font-size: .9em;}
+ }
+
+.other-sources-tabs { margin: 20px 0 0 0; 
+	li{ font-size: .8em;}
+	
+}
+.definition-tabs {
+	
+	li > a { color: darken($color-gray, 40%); background: lighten($color-gray, 3%);}
+}
+
+.other-meaning-tabs { 
+
+	padding: 0; margin: 0;
+	li {list-style: none; padding: 0; margin: 0;}
+	p { font-size: 1.3em; padding: 0; margin: 20px 0 0 30px;}
+}
+
+.user-link-other { color: $color-blue; font-weight: bold; font-size: 11px;}
+
