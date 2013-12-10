@@ -13,7 +13,15 @@ body { background: #e3f3fa; }
 
 .navbar-default .navbar-brand { color: white; }
 
+.logo-container { padding: 0; margin: 0; }
+
+.logo-container a { background: url("../images/hashthat-logo.png") no-repeat; display: block; heigth: 40px; position: relative; top: 5px; text-indent: -9999px; width: 151px; z-index: 9999; }
+
 .header-search .search-input { width: 400px; }
+
+.right-nav-home-link a { color: white !important; }
+
+.header-avatar { width: 18px; height: 18px; margin: 0 10px 0 0; }
 
 .main { background: white; margin-top: 60px; }
 
@@ -27,17 +35,19 @@ body { background: #e3f3fa; }
 .details-page .tab-content #facebook { padding: 20px; }
 .details-page .tab-content #twitter { padding: 20px; }
 .details-page .tab-content #instagram-images { padding: 20px; }
+.details-page .upvotes-name { color: gray; font-size: 11px; }
 
 #instagram-images .media-object { width: 40px; height: 40px; }
 #instagram-images .media-body { font-size: 13px; }
 #instagram-images .media-body .instagram-author { font-size: 14px; }
 
+#twitter { padding: 20px; }
 #twitter .tweets { padding: 0 0 20px 0; border-bottom: 1px solid #eee; }
 #twitter ul { list-style: none; padding: 0; margin: 0; }
 #twitter ul .tweet-image-link { float: left; width: 50px; height: 50px; display: inline-block; float: left; }
 #twitter ul .tweet-image { width: 50px; height: 50px; }
 #twitter .tweet-container { padding: 0 0 0 70px; }
-#twitter .tweet-container h3 { font-size: 1.4em; color: #0088CC; font-weight: bold; }
+#twitter .tweet-container .twitter-name { font-size: 14px; color: #0088CC; font-weight: bold; }
 #twitter .tweet-container p { font-size: 12px; }
 #twitter .load-more { margin: 0 auto; width: 100px; }
 
@@ -54,8 +64,8 @@ body { background: #e3f3fa; }
 .vote-container { position: relative; }
 .vote-container .vote-up { position: absolute; top: 0px; display: block; }
 .vote-container .vote-up:hover { text-decoration: none; cursor: pointer; }
-.vote-container .vote-count { font-size: 19px; position: absolute; top: 15px; display: inline-block; margin: 0 auto; }
-.vote-container .vote-down { position: absolute; top: 40px; }
+.vote-container .vote-count { color: #b8b8b8; font-size: 19px; position: absolute; top: 15px; display: inline-block; margin: 0 auto; }
+.vote-container .vote-down { position: absolute; top: 40px; left: 13px; }
 .vote-container .vote-down:hover { text-decoration: none; cursor: pointer; }
 
 .add-meaning h2 { font-size: 1em; }
@@ -69,16 +79,56 @@ body { background: #e3f3fa; }
 .detail-sidebar ul li { list-style: none; }
 .detail-sidebar ul li a { color: #d03a3a; font-size: .9em; }
 
+.friends-using-hashtag { width: 200px; }
 .friends-using-hashtag li { float: left; margin: 5px 0 0 5px; }
 .friends-using-hashtag img { width: 30px; height: 30px; }
 
 .other-sources-tabs { margin: 20px 0 0 0; }
 .other-sources-tabs li { font-size: .8em; }
 
-.definition-tabs li > a { color: #858585; background: #f3f3f3; }
+.definition-tabs li.active { font-weight: bold; }
+.definition-tabs li > a { font-size: 11px; color: #858585; background: #f3f3f3; padding: 5px 10px; }
 
 .other-meaning-tabs { padding: 0; margin: 0; }
 .other-meaning-tabs li { list-style: none; padding: 0; margin: 0; }
 .other-meaning-tabs p { font-size: 1.3em; padding: 0; margin: 20px 0 0 30px; }
 
 .user-link-other { color: #19558d; font-weight: bold; font-size: 11px; }
+
+/*
+	Feed
+*/
+.feed { background: white; margin-top: 60px; }
+
+.feed-sidebar { margin-top: 10px; }
+.feed-sidebar .media-object { width: 50px; height: 50px; }
+.feed-sidebar .feed-profile { background: #f6f7f9; }
+.feed-sidebar .feed-hashtags-by-you { background: #f6f7f9; }
+.feed-sidebar .feed-hashtags-by-you h1 { font-size: 1em; }
+.feed-sidebar .feed-hashtags-by-you ul { padding: 0; margin: 0 0 0 10px; }
+.feed-sidebar .feed-hashtags-by-you ul li { list-style: none; }
+.feed-sidebar .feed-hashtags-by-you ul li a { color: #d03a3a; font-size: .9em; }
+
+.feed-timeline ul { list-style: none; padding: 0; margin: 0; }
+.feed-timeline .feed-item { border-bottom: 1px solid #ebebeb; padding: 20px 0; }
+.feed-timeline .feed-item div .other-sources-tabs { margin: 19px 0 0 50px; }
+.feed-timeline .feed-item .posted-time { font-size: 11px; color: #b8b8b8; margin: 0 0 0 10px; }
+.feed-timeline .media { padding: 5px 20px; }
+.feed-timeline .media-object { width: 40px; height: 40px; }
+.feed-timeline .media-heading { font-size: 13px; }
+.feed-timeline .media-body { font-size: 12px; }
+.feed-timeline .media-body .feed-hash-author { font-weight: bold; color: #6c6c6c; }
+.feed-timeline .hash-post-container { margin: 10px 0 0 0; }
+.feed-timeline .feed-hashtag { color: #d03a3a; font-size: 14px; font-weight: bold; }
+.feed-timeline .feed-meaning { display: inline; }
+
+.feed-tabs-inner { border-left: 1px solid #DDDDDD; border-right: 1px solid #DDD; border-bottom: 1px solid #DDD; }
+
+.comment-text { font-size: 11px; }
+
+.feed-item-footer { margin: 5px 0 0 0; }
+
+/*
+	Misc
+*/
+.no-padding { padding: 0 !important; margin: 0 !important; }

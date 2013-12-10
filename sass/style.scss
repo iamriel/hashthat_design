@@ -24,9 +24,14 @@ body{ background: $color-sky-blue;}
 .navbar-default { background: #d03a3a;}
 .navbar-default .navbar-brand {color: $color-white;}
 
+.logo-container { padding: 0; margin: 0;  }
+.logo-container a {background: url("../images/hashthat-logo.png") no-repeat; display: block; heigth: 40px; position: relative; top: 5px; text-indent:-9999px; width: 151px;   z-index: 9999;  }
 .header-search { 
 	.search-input { width: 400px;}
 }
+.right-nav-home-link a{ color: $color-white !important;}
+
+.header-avatar { width: 18px;height: 18px; margin: 0 10px 0 0; }
 
 
 .main { background: $color-white; margin-top: 60px;}
@@ -48,6 +53,8 @@ body{ background: $color-sky-blue;}
 		#twitter {padding: 20px;}
 		#instagram-images {padding: 20px;}
 	}
+
+	.upvotes-name { color: lighten(#000, 50%); font-size: 11px;}
 }
 
 #instagram-images { 
@@ -58,6 +65,7 @@ body{ background: $color-sky-blue;}
 	}
 }
 #twitter {
+	padding: 20px;
 	.tweets {padding: 0 0 20px 0; border-bottom: 1px solid #eee;}
 	ul { list-style: none; padding: 0; margin: 0;
 		.tweet-image-link { float: left; width: 50px; height: 50px; display: inline-block; float: left; }
@@ -65,7 +73,8 @@ body{ background: $color-sky-blue;}
 	}
 	.tweet-container { 
 		padding: 0 0 0 70px;
-		h3 { font-size: 1.4em; color: #0088CC; font-weight: bold; }
+		h3 { }
+		.twitter-name { font-size: 14px; color: #0088CC; font-weight: bold; }
 		p { font-size: 12px;}
 	}
 
@@ -95,10 +104,10 @@ body{ background: $color-sky-blue;}
 	.vote-up {position: absolute; top: 0px; display: block;
 		&:hover { @include vote-hover;}
 	}
-	.vote-count{font-size: 19px; position: absolute; top: 15px; display: inline-block; margin: 0 auto;
+	.vote-count{color: darken($color-gray, 20%);font-size: 19px; position: absolute; top: 15px; display: inline-block; margin: 0 auto;
 		
 	}
-	.vote-down{ position: absolute; top: 40px;
+	.vote-down{ position: absolute; top: 40px; left: 13px;
 		&:hover { @include vote-hover;}
 	}
 }
@@ -120,6 +129,7 @@ body{ background: $color-sky-blue;}
  }
 
 .friends-using-hashtag {
+	width: 200px;
 	li {float: left; margin: 5px 0 0 5px; }
 	img { width: 30px; height: 30px;}
 }
@@ -129,8 +139,8 @@ body{ background: $color-sky-blue;}
 	
 }
 .definition-tabs {
-	
-	li > a { color: darken($color-gray, 40%); background: lighten($color-gray, 3%);}
+	li.active { font-weight: bold;}
+	li > a { font-size: 11px; color: darken($color-gray, 40%); background: lighten($color-gray, 3%); padding: 5px 10px;}
 }
 
 .other-meaning-tabs { 
@@ -141,4 +151,84 @@ body{ background: $color-sky-blue;}
 }
 
 .user-link-other { color: $color-blue; font-weight: bold; font-size: 11px;}
+
+
+/*
+	Feed
+*/
+
+.feed { background: $color-white; margin-top: 60px;}
+.feed-sidebar { 
+	
+	margin-top: 10px;
+	
+
+	.media-object { width: 50px;height: 50px;} 
+
+	.feed-profile { background: #f6f7f9;}
+	.feed-hashtags-by-you { background: #f6f7f9;
+		h1 { font-size: 1em;}
+		ul { padding: 0; margin: 0 0 0 10px;}
+		ul li { list-style: none;}
+		ul li a{ color: $color-red; font-size: .9em;}
+	}
+}
+
+
+.feed-timeline {
+	ul { list-style: none; padding: 0; margin: 0;}
+
+	.feed-item { border-bottom: 1px solid $color-gray; padding: 20px 0;
+		div .other-sources-tabs { margin: 19px 0 0 50px}
+		.posted-time {font-size: 11px; color: darken($color-gray, 20%); margin: 0 0 0 10px;}
+
+	}
+	.media {  padding: 5px 20px; }
+	.media-object { width: 40px; height: 40px;}
+	.media-heading { font-size: 13px; }
+	.media-body { font-size: 12px;
+		.feed-hash-author { font-weight: bold; color: darken($color-gray, 50%);
+		}
+
+	}
+	.hash-post-container { margin: 10px 0 0 0;}	
+	.feed-hashtag {color: $color-red; font-size: 14px; font-weight: bold;
+	}
+	.feed-meaning { display: inline; }
+}
+.feed-tabs-inner { border-left: 1px solid #DDDDDD; border-right: 1px solid #DDD; border-bottom: 1px solid #DDD; }
+.comment-text { font-size: 11px;}
+
+.feed-item-footer { margin: 5px 0 0 0; }
+
+.feed-vote-container {
+	// position: relative;
+	// .vote-up {position: absolute; top: 0px; display: block;
+	// 	&:hover { @include vote-hover;}
+	// }
+	// .vote-count{color: darken($color-gray, 20%);position: absolute; top: 10px; display: inline-block; margin: 0 auto;
+		
+	// }
+	// .vote-down{ position: absolute; top: 30px; left: 13px;
+	// 	&:hover { @include vote-hover;}
+	// }
+}
+
+
+
+
+/*
+	Misc
+*/
+
+.no-padding{ padding: 0 !important; margin: 0 !important;}
+
+
+
+
+
+
+
+
+
 

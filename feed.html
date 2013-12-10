@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap 101 Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1 class="logo-container"><a class="navbar-brand " href="#">Hashthat</a></h1>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                       <li>
+                            <form class="navbar-form navbar-left" role="search">
+                                <div class="form-group header-search">
+                                    <input type="text" class="form-control search-input" placeholder="Search for people, tags, and meaning">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            </form>
+                        </li>
+                        
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right header-nav-right">
+                        <li class="right-nav-home-link"><a href="#home">Home</a></li>
+
+                        <li class="dropdown right-nav-profile-link">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="header-avatar" src="http://placekitten.com/200/300" alt="">HelloKitty<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Account Settings</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div><!--/.nav-collapse -->
+
+
+                 
+                
+            </div>
+        </div>
+        
+        <div class="feed">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-3 feed-sidebar">
+                        <div class="feed-profile">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                </a>
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed-hashtags-by-you">
+                            <h1>Hashtags by you</h1> 
+                            <ul>
+                                <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, alias.">#AnotherHashtag</a></li>
+                                <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, corporis!">#Pasmo</a></li>
+                                <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, omnis?">#BangonTacloban</a></li>
+                                <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, minus.">#Wooohwoohh</a></li>
+                                <li><a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, laudantium.">#HashtagBaybeeey!</a></li>
+
+         
+                                <li>
+                                
+
+                                    <a href="#" class="hashtag-tooltip" rel="tooltip" data-original-title="#TestHashtag" data-content="ashshgsffs">Hover me for a tooltip</a>
+
+                                </li>
+                            </ul> 
+                        </div>
+
+                    </div><!-- end feed-sidebar -->
+
+                    
+                    <div class="feed-timeline col-xs-12 col-md-7">
+                        <ul>
+                            <li class="feed-item">
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="col-md-11 no-padding">
+                                            
+                                            <h4 class="media-heading"><a class="feed-hash-author" href="#">Hello Kitty</a><span class="posted-time">3 mins ago</span></h4>
+                                            
+                                            <div class="hash-post-container">
+                                                <a class="feed-hashtag"href="#">#Testhashtag</a> - <p class="feed-meaning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, nulla. </p>
+                                            </div> 
+                                            
+                                        </div>
+                                        
+
+                                        <div class="col-md-1 feed-vote-container pull-right">
+                                            <a class="vote-up glyphicon glyphicon-chevron-up"></a>
+                                            <span class="vote-count">208</span>
+                                            <a class="vote-down glyphicon glyphicon-chevron-down"></a>
+     
+                                        </div> 
+
+                                        
+                                       <!--  <footer class="feed-item-footer">
+                                            <a class="vote-up glyphicon glyphicon-chevron-up"></a> <a href="">Upvote</a>
+                                            <span class="posted-time pull-right">3 mins ago</span>
+                                        </footer> -->
+
+                                        
+                                        <br>
+                                        <!-- <img src="http://placekitten.com/200/300" alt=""> -->
+                                    </div>
+
+                                    <div class="other-sources-tabs ">
+                                        <!-- Nav tabs -->
+                                        <ul class="nav nav-tabs definition-tabs">
+
+                                           
+                                            <li class="active"><a href="#comments" data-toggle="tab"><span class="glyphicon glyphicon-comment"></span>
+                                            Comments</a></li>
+                                            <li><a href="#instagram-images" data-toggle="tab">Instagram Photos</a></li>
+                                            <li><a href="#facebook" data-toggle="tab">Facebook</a></li>
+                                            <li><a href="#twitter" data-toggle="tab">Tweets</a></li>
+                                            
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content feed-tabs-inner">
+                                            
+                                            <div class="tab-pane active" id="comments">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="http://placekitten.com/200/300" alt="...">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a class="comment-author" href="#">@UsernameHere</a>
+                                                        This is a comment.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, atque.
+                                                        <br>
+                                                        <span class="comment-time">2 seconds ago</span><span><a href="#" class="comment-like">Like</a></span>
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="http://placekitten.com/200/300" alt="...">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <a class="comment-author" href="#">@UsernameHere</a>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, qui, perspiciatis, repellat dolore suscipit alias iusto aspernatur iste sint minus saepe quibusdam sapiente aliquam itaque ullam expedita sequi fuga amet.
+
+                                                        <br>
+                                                        <span class="comment-time">5 mins ago</span><span><a href="#" class="comment-like">Like</a></span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="http://placekitten.com/200/300" alt="...">
+                                                    </a>
+                                                    <div class="media-body inner-media">
+                                                        <form class="form-horizontal" role="form">
+                                                          <div class="form-group">
+                                                            <div class="col-sm-12 col-md-12">
+                                                              <input type="text" class="input-block-level comment-text form-control" id="" placeholder="Write a comment..." name="">
+                                                            </div>
+                                                          </div>
+                                                        </form>
+                                                    </div> 
+                                                    
+                                                </div>
+
+                                            </div>
+
+                                            <div class="tab-pane" id="instagram-images">
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                                        <br>
+                                                        <img src="http://placekitten.com/200/300" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                                        <br>
+                                                        <img src="http://placekitten.com/200/300" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="media">
+                                                    <a class="pull-left" href="#">
+                                                        <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                                    </a>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                                        <br>
+                                                        <img src="http://placekitten.com/200/300" alt="">
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="tab-pane" id="facebook">
+                                                
+
+
+                                            </div>
+
+
+                                            <div class="tab-pane" id="twitter">
+                                                
+                                                <ul>
+                                                    <li>
+                                                        <div class="tweets">
+
+                                                            <a href="" class="tweet-image-link">
+                                                                 <img class="tweet-image"src="http://placekitten.com/200/300" alt="">
+                                                            </a>
+                                                           
+
+                                                            <div class="tweet-container">
+                                                                <a class="twitter-name" href="">@ruthpablos</a>
+                                                                <p>RT @EsComidaPorno: trufas de chocolate un pequeño bocado de tentacion #FoodPorn http://t.co/nDjOIzKRUZ </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tweets">
+
+                                                            <a href="" class="tweet-image-link">
+                                                                 <img class="tweet-image"src="http://placekitten.com/200/300" alt="">
+                                                            </a>
+                                                           
+
+                                                            <div class="tweet-container">
+                                                                <a class="twitter-name" href="">@Domma313</a>
+                                                                <p>So I don't like when my food touches lmao #foodporn #housewife http://t.co/KbMp2OpFcg </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tweets">
+
+                                                            <a href="" class="tweet-image-link">
+                                                                 <img class="tweet-image"src="http://placekitten.com/200/300" alt="">
+                                                            </a>
+                                                           
+
+                                                            <div class="tweet-container">
+                                                                <a class="twitter-name" href="">@Azara1225</a>
+                                                                <p>RT @Comida_Porno: Tentacion de viernes #FoodPorn http://t.co/VmjKD9boSz </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tweets">
+
+                                                            <a href="" class="tweet-image-link">
+                                                                 <img class="tweet-image"src="http://placekitten.com/200/300" alt="">
+                                                            </a>
+                                                           
+
+                                                            <div class="tweet-container">
+                                                                <a class="twitter-name" href="">@Azara1225</a>
+                                                                <p>So I haven't eaten my advent calendar chocolates in days just pigging out on mums Heroes #foodporn </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="tweets">
+
+                                                            <a href="" class="tweet-image-link">
+                                                                 <img class="tweet-image"src="http://placekitten.com/200/300" alt="">
+                                                            </a>
+                                                           
+
+                                                            <div class="tweet-container">
+                                                                <a class="twitter-name" href="">@Azara1225</a>
+                                                                <p>RT @Comida_Porno: Galletas choco chips #FoodPorn http://t.co/cTVPchprjh  </p>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                                <p class="text-center"><a href="#" class=""  data-loading-text="Loading..." >Load more</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </li>
+
+                            <li>
+                                <div class="media">
+                                    <a class="pull-left" href="#">
+                                        <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a class="feed-hash-author" href="#">Hello Kitty</a></h4>
+                                        
+                                        <a class="feed-hashtag"href="#">#Testhashtag</a> - <p class="feed-meaning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. </p>
+
+                                        
+                                        <!-- <img src="http://placekitten.com/200/300" alt=""> -->
+                                    </div>
+                                 </div>
+                            </li>
+                        </ul>
+                            
+                    </div>
+
+                    <div class="col-md-2 ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, praesentium, id, repellendus dolorem nam voluptas ipsum eligendi voluptatibus delectus nulla tempora saepe consequatur inventore aperiam rem laudantium tempore at ullam!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+
+        
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

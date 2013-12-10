@@ -25,7 +25,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Hashthat</a>
+
+                    <h1 class="logo-container"><a class="navbar-brand " href="#">Hashthat</a></h1>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
@@ -37,6 +38,23 @@
                                 <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                             </form>
                         </li> 
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right header-nav-right">
+                        <li class="right-nav-home-link"><a href="#home">Home</a></li>
+
+                        <li class="dropdown right-nav-profile-link">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="header-avatar" src="http://placekitten.com/200/300" alt="">HelloKitty<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                               
+                                <li><a href="#">Account Settings</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -57,16 +75,20 @@
 
                                         <p class="hash-definition">: This is the meaning of the hashtag with the most upvotes! Ohh yeah! Ohh yeahh! Yeahh! Lorem ipsum dolor sit amet. </p>
 
-                                        <div class="user-profile col-md-offset-10">
+                                        <div class="user-profile ">
                                             <img src="http://placekitten.com/200/300" alt="" class="img-thumbnail ">
                                             <a href="" class="user-link" >KittyKitten</a>
                                         </div> 
+
+                                        <div class="">
+                                            <p class="upvotes-name">Upvotes by Matt Wasserman, Nicolette Teo, Keya Luo, Victor Zhang, and 260 more. </p>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-1 vote-container">
-                                        <a class="vote-up glyphicon glyphicon-arrow-up"></a>
-                                        <span class="vote-count">8</span>
-                                        <a class="vote-down glyphicon glyphicon-arrow-down"></a>
+                                        <a class="vote-up glyphicon glyphicon-chevron-up"></a>
+                                        <span class="vote-count">208</span>
+                                        <a class="vote-down glyphicon glyphicon-chevron-down"></a>
  
                                     </div> 
                                 </div>
@@ -84,7 +106,7 @@
 
                                 <li class="active"><a href="#other-meanings" data-toggle="tab">Other meanings</a></li>
                                 <li><a href="#comments" data-toggle="tab">Comments</a></li>
-                                <li><a href="#instagram-images" data-toggle="tab">Instagram Images</a></li>
+                                <li><a href="#instagram-images" data-toggle="tab">Instagram Photos</a></li>
                                 <li><a href="#facebook" data-toggle="tab">Facebook</a></li>
                                 <li><a href="#twitter" data-toggle="tab">Tweets</a></li>
                                 
@@ -103,7 +125,7 @@
                                                         <img src="http://placekitten.com/200/300" alt="" class="img-thumbnail ">
                                                         <a href="" class="user-link-other" >KittyKitten</a>
 
-                                                     </div>
+                                                    </div>
                                                 </div>
 
                                                 
@@ -196,7 +218,7 @@
                                                
 
                                                 <div class="tweet-container">
-                                                    <h3><a href="">@ruthpablos</a></h3>
+                                                    <a href="" class="twitter-name">@ruthpablos</a>
                                                     <p>RT @EsComidaPorno: trufas de chocolate un pequeño bocado de tentacion #FoodPorn http://t.co/nDjOIzKRUZ </p>
                                                 </div>
                                             </div>
@@ -210,7 +232,7 @@
                                                
 
                                                 <div class="tweet-container">
-                                                    <h3><a href="">@Domma313</a></h3>
+                                                    <a href="" class="twitter-name">@ruthpablos</a>
                                                     <p>So I don't like when my food touches lmao #foodporn #housewife http://t.co/KbMp2OpFcg </p>
                                                 </div>
                                             </div>
@@ -224,7 +246,7 @@
                                                
 
                                                 <div class="tweet-container">
-                                                    <h3><a href="">@Azara1225</a></h3>
+                                                    <a href="" class="twitter-name">@ruthpablos</a>
                                                     <p>RT @Comida_Porno: Tentacion de viernes #FoodPorn http://t.co/VmjKD9boSz </p>
                                                 </div>
                                             </div>
@@ -238,7 +260,7 @@
                                                
 
                                                 <div class="tweet-container">
-                                                    <h3><a href="">@Azara1225</a></h3>
+                                                    <a href="" class="twitter-name">@ruthpablos</a>
                                                     <p>So I haven't eaten my advent calendar chocolates in days just pigging out on mums Heroes #foodporn </p>
                                                 </div>
                                             </div>
@@ -252,7 +274,7 @@
                                                
 
                                                 <div class="tweet-container">
-                                                    <h3><a href="">@Azara1225</a></h3>
+                                                    <a href="" class="twitter-name">@ruthpablos</a>
                                                     <p>RT @Comida_Porno: Galletas choco chips #FoodPorn http://t.co/cTVPchprjh  </p>
                                                 </div>
                                             </div>
@@ -297,11 +319,9 @@
 
                             </li>
                         </ul> 
+                    </div>
 
-                       
-                    </div> 
-
-                     <div class="friends-using-hashtag">
+                     <div class="friends-using-hashtag ">
                         <h1>Friends using #TestHashtag</h1> 
                         <ul>
                             <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
@@ -314,6 +334,9 @@
                             <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li> 
                             <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
                             <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
+                            <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li> 
                             <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li>
                             <li><a href=""><img class="tweet-image"src="http://placekitten.com/200/300" alt=""></a></li> 
 
