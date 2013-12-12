@@ -4,6 +4,8 @@
         <title>Bootstrap 101 Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap -->
+        <link href="css/font-awesome.min.css" rel="stylesheet" >
+
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
@@ -46,7 +48,7 @@
                         <li class="dropdown right-nav-profile-link">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="header-avatar" src="http://placekitten.com/200/300" alt="">HelloKitty<b class="caret"></b></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Messages</a></li>
                                 <li><a href="#">Another action</a></li>
                                 <li><a href="#">Something else here</a></li>
                                 <li class="divider"></li>
@@ -68,20 +70,30 @@
                     
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="definition-container">
+                            <!-- <div class="definition-container"> -->
                                 <div class="row">
                                     <div class="col-md-11">
-                                        <h2 class="hash-name">#TestHashTag</h2> 
+                                        <div class="well">
 
-                                        <p class="hash-definition">: This is the meaning of the hashtag with the most upvotes! Ohh yeah! Ohh yeahh! Yeahh! Lorem ipsum dolor sit amet. </p>
+                                            <h2 class="hash-name">#TestHashTag</h2> 
 
-                                        <div class="user-profile ">
-                                            <img src="http://placekitten.com/200/300" alt="" class="img-thumbnail ">
-                                            <a href="" class="user-link" >KittyKitten</a>
-                                        </div> 
+                                            <p class="hash-definition">: This is the meaning of the hashtag with the most upvotes! Ohh yeah! Ohh yeahh! Yeahh! Lorem ipsum dolor sit amet. </p>
 
-                                        <div class="">
-                                            <p class="upvotes-name">Upvotes by Matt Wasserman, Nicolette Teo, Keya Luo, Victor Zhang, and 260 more. </p>
+                                            
+                                            <div class="upvote-container-main">
+                                                <div class="vote-count-container">
+                                                    <a class="upvoted"><i class="fa fa-chevron-up"></i>Upvoted </a>
+            
+                                                    <span class="vote-count">208</span>
+                                                    <a class="vote-up glyphicon glyphicon-chevron-up"></a>
+                                                    <span>|</span> 
+                                                    <a class="vote-down glyphicon glyphicon-chevron-down"></a>
+                                                    <img src="http://placekitten.com/200/300" alt="" class="img-author ">
+                                                <a href="" class="user-link" >KittyKitten</a>
+                                                </div>
+                                                <p class="upvotes-name">Upvotes by Matt Wasserman, Nicolette Teo, Keya Luo, Victor Zhang, and 260 more. </p> 
+                                            </div> 
+                                            
                                         </div>
                                     </div>
 
@@ -96,7 +108,8 @@
 
                               
                             </div>
-                        </div>
+                        <!-- </div> -->
+
 
                         
                     </div>
@@ -104,28 +117,65 @@
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs definition-tabs">
 
-                                <li class="active"><a href="#other-meanings" data-toggle="tab">Other meanings</a></li>
-                                <li><a href="#comments" data-toggle="tab">Comments</a></li>
-                                <li><a href="#instagram-images" data-toggle="tab">Instagram Photos</a></li>
-                                <li><a href="#facebook" data-toggle="tab">Facebook</a></li>
-                                <li><a href="#twitter" data-toggle="tab">Tweets</a></li>
+                                <li class="active"><a href="#other-meanings" data-toggle="tab">
+                                    <i class="fa fa-lightbulb-o"></i>Other meanings</a></li>
+                                <li><a href="#comments" data-toggle="tab">
+                                    <i class="fa fa-comments"></i>Comments</a></li>
+                                <li><a href="#instagram-images" data-toggle="tab">
+                                    <i class="fa fa-instagram"></i>Instagram Photos</a></li>
+                                <li><a href="#facebook" data-toggle="tab">
+                                    <i class="fa fa-facebook"></i>Facebook</a></li>
+                                <li><a href="#twitter" data-toggle="tab">
+                                    <i class="fa fa-twitter"></i>Tweets</a></li>
                                 
                             </ul>
 
                             <!-- Tab panes -->
                             <div class="tab-content">
-                                <div class="tab-pane  active" id="other-meanings">
+                                <div class="tab-pane tab-other-meanings active" id="other-meanings">
                                     <ul class="other-meaning-tabs">
                                         <li>
                                             <div class="row">
                                                 <div class="col-md-11">
-                                                    <p class="hash-definition-other">: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eum.</p>
+                                                    <div class="another-meaning">
+                                                        <p class="hash-definition-other">: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eum.</p>
 
-                                                    <div class="col-md-offset-10">
-                                                        <img src="http://placekitten.com/200/300" alt="" class="img-thumbnail ">
-                                                        <a href="" class="user-link-other" >KittyKitten</a>
+
+                                                        <div class="upvote-container-main">
+                                                            <div class="vote-count-container">
+                                                                <a class="to-upvote"><i class="fa fa-chevron-up"></i>Upvote </a>
+                        
+                                                                <span class="vote-count">59</span>
+                                                                <a class="vote-up glyphicon glyphicon-chevron-up"></a>
+                                                                <span>|</span> 
+                                                                <a class="vote-down glyphicon glyphicon-chevron-down"></a>
+                                                                <img src="http://placekitten.com/200/300" alt="" class="img-author ">
+                                                            <a href="" class="user-link" >Doge Doge</a>
+                                                            </div>
+                                                            <p class="upvotes-name">Upvotes by Matt Wasserman, Nicolette Teo, Keya Luo, Victor Zhang, and 260 more. </p> 
+                                                        </div> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-11">
+                                                    <div class="another-meaning">
+                                                        <p class="hash-definition-other">: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, eum.</p>
+
+                                                        <div class="upvote-container-main">
+                                                            <div class="vote-count-container">
+                                                                <a class="to-upvote"><i class="fa fa-chevron-up"></i>Upvote </a>
+                        
+                                                                <span class="vote-count">2</span>
+                                                                <a class="vote-up glyphicon glyphicon-chevron-up"></a>
+                                                                <span>|</span> 
+                                                                <a class="vote-down glyphicon glyphicon-chevron-down"></a>
+                                                                <img src="http://placekitten.com/200/300" alt="" class="img-author ">
+                                                            <a href="" class="user-link" >KittyKitten</a>
+                                                            </div>
+                                                            <p class="upvotes-name">Upvotes by Matt Wasserman and Nicolette Teo </p> 
+                                                        </div>
 
                                                     </div>
+                                                    
                                                 </div>
 
                                                 
@@ -134,10 +184,10 @@
                                         </li>
                                      </ul> 
                                 </div>
-                                <div class="tab-pane" id="comments">
+                                <div class="tab-pane details-tab-comments" id="comments">
                                     <div class="media">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object" src="http://placekitten.com/200/300" alt="...">
+                                            <img class="media-object img-thumbnail" src="http://placekitten.com/200/300" alt="...">
                                         </a>
                                         <div class="media-body">
                                             <a class="comment-author" href="#">@UsernameHere</a>
@@ -148,7 +198,7 @@
                                     </div>
                                     <div class="media">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object" src="http://placekitten.com/200/300" alt="...">
+                                            <img class="media-object img-thumbnail" src="http://placekitten.com/200/300" alt="...">
                                         </a>
                                         <div class="media-body">
                                             <a class="comment-author" href="#">@UsernameHere</a>
@@ -159,54 +209,70 @@
                                         </div>
                                     </div>
 
-                                </div>
-
-                                <div class="tab-pane" id="instagram-images">
                                     <div class="media">
                                         <a class="pull-left" href="#">
-                                            <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                            <img class="media-object" src="http://placekitten.com/200/300" alt="...">
                                         </a>
-                                        <div class="media-body">
-                                            <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
-                                            <br>
-                                            <img src="http://placekitten.com/200/300" alt="">
-                                        </div>
+                                        <div class="media-body inner-media">
+                                            <form class="form-horizontal" role="form">
+                                              <div class="form-group">
+                                                <div class="col-sm-12 col-md-12">
+                                                  <input type="text" class="input-block-level comment-text form-control" id="" placeholder="Write a comment..." name="">
+                                                </div>
+                                              </div>
+                                            </form>
+                                        </div> 
+                                        
                                     </div>
-                                    <div class="media">
-                                        <a class="pull-left" href="#">
-                                            <img class="media-object" src="http://placekitten.com/200/300" alt="">
-                                        </a>
-                                        <div class="media-body">
-                                            <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
-                                            <br>
-                                            <img src="http://placekitten.com/200/300" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="media">
-                                        <a class="pull-left" href="#">
-                                            <img class="media-object" src="http://placekitten.com/200/300" alt="">
-                                        </a>
-                                        <div class="media-body">
-                                            <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
-                                            <br>
-                                            <img src="http://placekitten.com/200/300" alt="">
-                                        </div>
-                                    </div>
-
 
                                 </div>
 
-                                <div class="tab-pane" id="facebook">
+                                <div class="tab-pane tab-instagram-images" id="instagram-images">
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                            <br>
+                                            <img src="http://placekitten.com/200/300" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                            <br>
+                                            <img src="http://placekitten.com/200/300" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="media">
+                                        <a class="pull-left" href="#">
+                                            <img class="media-object" src="http://placekitten.com/200/300" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <h4 class="media-heading"><a class="instagram-author" href="#">@Media heading</a></h4>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, laudantium. 
+                                            <br>
+                                            <img src="http://placekitten.com/200/300" alt="">
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="tab-pane tab-facebook" id="facebook">
                                     
 
 
                                 </div>
 
 
-                                <div class="tab-pane" id="twitter">
+                                <div class="tab-pane tab-twitter" id="twitter">
                                     
                                     <ul>
                                         <li>
@@ -284,7 +350,7 @@
                                     <p class="text-center"><a href="#" class=""  data-loading-text="Loading..." >Load more</a></p>
                                 </div>
                             </div>
-                        </div>
+                        </div><!--end other-source-tabs -->
 
                     <div class="add-meaning">
                         <h2>Add your own meaning to this hashtag!</h2> 

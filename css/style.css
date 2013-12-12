@@ -9,7 +9,7 @@ body { background: #e3f3fa; }
 /*
 	Header
 */
-.navbar-default { background: #d03a3a; }
+.navbar-default { background: #1e435f; }
 
 .navbar-default .navbar-brand { color: white; }
 
@@ -25,41 +25,68 @@ body { background: #e3f3fa; }
 
 .main { background: white; margin-top: 60px; }
 
+/*
+	Details (hashtag page)
+*/
 .details-page h1 { color: #404040; font-size: 1.6em; }
 .details-page .definition-container { background: #EBEBEB; padding: 20px 0; overflow: hidden; }
-.details-page .hash-name { color: #d03a3a; font-size: 1.4em; margin: 0 0 10px 15px; }
-.details-page .hash-definition { margin: 0 0 0 30px; font-size: 1.2em; }
+.details-page .hash-name { color: #33a5d6; font-size: 1.4em; margin: 0 0 10px; }
+.details-page .hash-definition { margin: 0 0 0 20px; font-size: 1.2em; }
+.details-page .user-profile { margin: 20px 0 0 0; }
 .details-page .img-thumbnail { width: 40px; height: 40px; padding: 2px; }
 .details-page .user-link { color: #19558d; font-weight: bold; font-size: 11px; }
 .details-page .tab-content { background: white; border: 1px solid #DDDDDD; border-top: none; font-size: .9em; }
-.details-page .tab-content #facebook { padding: 20px; }
-.details-page .tab-content #twitter { padding: 20px; }
-.details-page .tab-content #instagram-images { padding: 20px; }
+.details-page .tab-content .tab-facebook { padding: 20px; }
+.details-page .tab-content .tab-twitter { padding: 20px; }
+.details-page .tab-content .tab-instagram-images { padding: 20px; }
+.details-page .tab-content .tab-other-meanings { padding: 20px; }
+.details-page .details-tab-comments ul { list-style: none; padding: 0; margin: 0; }
+.details-page .details-tab-comments .media { background: #f4fafd; padding: 5px; margin: 0 0 1px 0; }
+.details-page .details-tab-comments .media-object { width: 40px; height: 40px; }
+.details-page .details-tab-comments .media-heading { font-size: 14px; }
+.details-page .details-tab-comments .media-body { font-size: 12px; }
+.details-page .details-tab-comments .media-body .comment-author { font-weight: bold; }
+.details-page .details-tab-comments .comment-time { padding: 5px 0; font-size: 11px; color: #858585; }
+.details-page .details-tab-comments .comment-like { font-size: 11px; margin: 0 0 0 10px; }
 .details-page .upvotes-name { color: gray; font-size: 11px; }
+.details-page .well { margin: 10px 0 0 0; }
+.details-page .upvote-container-main { margin: 20px 0 0 0; }
+.details-page .upvote-container { float: left; margin: 0 20px 0 0; }
+.details-page .upvote-container .upvoted { font-weight: bold; color: #333; }
+.details-page .upvote-container .upvoted .fa-chevron-up { color: green; margin: 0 5px 0 0; }
+.details-page .upvote-container .to-upvote { cursor: pointer; font-weight: bold; }
+.details-page .upvote-container .to-upvote .fa-chevron-up { color: #9f9f9f; margin: 0 5px 0 0; }
+.details-page .vote-count-container .upvoted { font-weight: bold; color: #333; margin: 0 30px 0 0; }
+.details-page .vote-count-container .upvoted .fa-chevron-up { color: green; margin: 0 5px 0 0; }
+.details-page .vote-count-container .to-upvote { cursor: pointer; font-weight: bold; margin: 0 30px 0 0; }
+.details-page .vote-count-container .to-upvote .fa-chevron-up { color: #9f9f9f; margin: 0 5px 0 0; }
+.details-page .vote-count-container .glyphicon-chevron-up { color: #9f9f9f; }
+.details-page .vote-count-container .glyphicon-chevron-down { color: #9f9f9f; }
+.details-page .vote-count-container .img-author { width: 20px; height: 20px; margin: 0 0 0 20px; }
+.details-page .user-profile { margin: 10px 0 0 0px; }
 
-#instagram-images .media-object { width: 40px; height: 40px; }
-#instagram-images .media-body { font-size: 13px; }
-#instagram-images .media-body .instagram-author { font-size: 14px; }
+.tab-instagram-images .media-object { width: 40px; height: 40px; }
+.tab-instagram-images .media-body { font-size: 13px; }
+.tab-instagram-images .media-body .instagram-author { font-size: 14px; }
 
-#twitter { padding: 20px; }
-#twitter .tweets { padding: 0 0 20px 0; border-bottom: 1px solid #eee; }
-#twitter ul { list-style: none; padding: 0; margin: 0; }
-#twitter ul .tweet-image-link { float: left; width: 50px; height: 50px; display: inline-block; float: left; }
-#twitter ul .tweet-image { width: 50px; height: 50px; }
-#twitter .tweet-container { padding: 0 0 0 70px; }
-#twitter .tweet-container .twitter-name { font-size: 14px; color: #0088CC; font-weight: bold; }
-#twitter .tweet-container p { font-size: 12px; }
-#twitter .load-more { margin: 0 auto; width: 100px; }
+.tab-twitter { padding: 20px; }
+.tab-twitter .tweets { padding: 0 0 20px 0; border-bottom: 1px solid #eee; }
+.tab-twitter ul { list-style: none; padding: 0; margin: 0; }
+.tab-twitter ul .tweet-image-link { float: left; width: 50px; height: 50px; display: inline-block; float: left; }
+.tab-twitter ul .tweet-image { width: 50px; height: 50px; }
+.tab-twitter .tweet-container { padding: 0 0 0 70px; }
+.tab-twitter .tweet-container .twitter-name { font-size: 14px; color: #0088CC; font-weight: bold; }
+.tab-twitter .tweet-container p { font-size: 12px; }
+.tab-twitter .load-more { margin: 0 auto; width: 100px; }
 
-#comments { padding: 20px; }
-#comments ul { list-style: none; padding: 0; margin: 0; }
-#comments .media { background: #ecf7fc; padding: 5px; margin: 3px 0 0 0; }
-#comments .media-object { width: 40px; height: 40px; }
-#comments .media-heading { font-size: 14px; }
-#comments .media-body { font-size: 12px; }
-#comments .media-body .comment-author { font-weight: bold; }
-#comments .comment-time { padding: 5px 0; font-size: 11px; color: #858585; }
-#comments .comment-like { font-size: 11px; margin: 0 0 0 10px; }
+.feed-comment-tab ul { list-style: none; padding: 0; margin: 0; }
+.feed-comment-tab .media { background: #f4fafd; }
+.feed-comment-tab .media-object { width: 40px; height: 40px; }
+.feed-comment-tab .media-heading { font-size: 14px; }
+.feed-comment-tab .media-body { font-size: 12px; }
+.feed-comment-tab .media-body .comment-author { font-weight: bold; }
+.feed-comment-tab .comment-time { padding: 5px 0; font-size: 11px; color: #858585; }
+.feed-comment-tab .comment-like { font-size: 11px; margin: 0 0 0 10px; }
 
 .vote-container { position: relative; }
 .vote-container .vote-up { position: absolute; top: 0px; display: block; }
@@ -69,7 +96,7 @@ body { background: #e3f3fa; }
 .vote-container .vote-down:hover { text-decoration: none; cursor: pointer; }
 
 .add-meaning h2 { font-size: 1em; }
-.add-meaning .hash-name { color: #d03a3a; font-size: .9em; }
+.add-meaning .hash-name { color: #33a5d6; font-size: .9em; }
 .add-meaning .meaning-text-area { width: 300px; box-shadow: 0 0 0 10px #f4f2f2; border: 1px solid #a9a9a9; margin: 20px 0 0 20px; }
 .add-meaning .add-meaning-btn { margin: 20px 0 0 20px; padding: 5px 20px; }
 
@@ -77,7 +104,7 @@ body { background: #e3f3fa; }
 .detail-sidebar h1 { font-size: 1em; }
 .detail-sidebar ul { padding: 0; margin: 0 0 0 10px; }
 .detail-sidebar ul li { list-style: none; }
-.detail-sidebar ul li a { color: #d03a3a; font-size: .9em; }
+.detail-sidebar ul li a { color: #33a5d6; font-size: .9em; }
 
 .friends-using-hashtag { width: 200px; }
 .friends-using-hashtag li { float: left; margin: 5px 0 0 5px; }
@@ -88,10 +115,12 @@ body { background: #e3f3fa; }
 
 .definition-tabs li.active { font-weight: bold; }
 .definition-tabs li > a { font-size: 11px; color: #858585; background: #f3f3f3; padding: 5px 10px; }
+.definition-tabs .fa-instagram, .definition-tabs .fa-facebook, .definition-tabs .fa-twitter, .definition-tabs .fa-comments, .definition-tabs .fa-lightbulb-o { font-size: 13px; margin: 0 5px 0 0; }
 
 .other-meaning-tabs { padding: 0; margin: 0; }
 .other-meaning-tabs li { list-style: none; padding: 0; margin: 0; }
-.other-meaning-tabs p { font-size: 1.3em; padding: 0; margin: 20px 0 0 30px; }
+.other-meaning-tabs p { font-size: 1.3em; }
+.other-meaning-tabs .user-profile { margin: 10px 0 0 20px; }
 
 .user-link-other { color: #19558d; font-weight: bold; font-size: 11px; }
 
@@ -102,33 +131,59 @@ body { background: #e3f3fa; }
 
 .feed-sidebar { margin-top: 10px; }
 .feed-sidebar .media-object { width: 50px; height: 50px; }
-.feed-sidebar .feed-profile { background: #f6f7f9; }
-.feed-sidebar .feed-hashtags-by-you { background: #f6f7f9; }
+.feed-sidebar .feed-profile { background: #f6f7f9; padding: 10px; }
+.feed-sidebar .feed-hashtags-by-you { margin: 20px 0; }
 .feed-sidebar .feed-hashtags-by-you h1 { font-size: 1em; }
 .feed-sidebar .feed-hashtags-by-you ul { padding: 0; margin: 0 0 0 10px; }
 .feed-sidebar .feed-hashtags-by-you ul li { list-style: none; }
-.feed-sidebar .feed-hashtags-by-you ul li a { color: #d03a3a; font-size: .9em; }
+.feed-sidebar .feed-hashtags-by-you ul li a { color: #33a5d6; font-size: .9em; }
 
+.feed-timeline .feed-well { margin: 10px 0 20px 0; overflow: hidden; }
+.feed-timeline .hash-meaning { margin: 5px 0 0 0; }
 .feed-timeline ul { list-style: none; padding: 0; margin: 0; }
-.feed-timeline .feed-item { border-bottom: 1px solid #ebebeb; padding: 20px 0; }
-.feed-timeline .feed-item div .other-sources-tabs { margin: 19px 0 0 50px; }
+.feed-timeline .feed-item { border-bottom: 2px solid #ebebeb; padding: 20px 0; }
+.feed-timeline .feed-item div .other-sources-tabs { margin: 10px 0 0 50px; }
 .feed-timeline .feed-item .posted-time { font-size: 11px; color: #b8b8b8; margin: 0 0 0 10px; }
-.feed-timeline .media { padding: 5px 20px; }
+.feed-timeline .media { padding: 5px 20px; margin: 0 0 1px 0; }
 .feed-timeline .media-object { width: 40px; height: 40px; }
 .feed-timeline .media-heading { font-size: 13px; }
 .feed-timeline .media-body { font-size: 12px; }
 .feed-timeline .media-body .feed-hash-author { font-weight: bold; color: #6c6c6c; }
-.feed-timeline .hash-post-container { margin: 10px 0 0 0; }
-.feed-timeline .feed-hashtag { color: #d03a3a; font-size: 14px; font-weight: bold; }
+.feed-timeline .hash-post-container { margin: 10px 0 10px 0; }
+.feed-timeline .feed-hashtag { color: #33a5d6; font-size: 16px; font-weight: bold; }
 .feed-timeline .feed-meaning { display: inline; }
+.feed-timeline .feed-meaning-container { border: none; }
+.feed-timeline .header-hashtag { font-size: 18px; padding: 0; margin: 0 0 10px 0; }
+.feed-timeline .panel-default { margin: 5px 0; }
+.feed-timeline .panel-footer { padding: 5px 5px; overflow: hidden; }
+
+.feed-item .upvotes-name { color: gray; font-size: 11px; }
 
 .feed-tabs-inner { border-left: 1px solid #DDDDDD; border-right: 1px solid #DDD; border-bottom: 1px solid #DDD; }
 
 .comment-text { font-size: 11px; }
 
+.another-meaning { border-bottom: 1px solid #ebebeb; margin: 0 0 10px 0; }
+.another-meaning .img-thumbnail { width: 30px; height: 30px; }
+
 .feed-item-footer { margin: 5px 0 0 0; }
+
+.vote-count { font-weight: bold; color: #6c6c6c; }
+
+.upvote-container-main { margin: 0 0 10px 0; }
+
+.upvote-container { float: left; margin: 0 20px 0 0; }
+.upvote-container .upvoted { font-weight: bold; color: #333; }
+.upvote-container .upvoted .fa-chevron-up { color: green; margin: 0 5px 0 0; }
+.upvote-container .to-upvote { cursor: pointer; font-weight: bold; }
+.upvote-container .to-upvote .fa-chevron-up { color: #9f9f9f; margin: 0 5px 0 0; }
+
+.vote-count-container .glyphicon-chevron-up { color: #9f9f9f; }
+.vote-count-container .glyphicon-chevron-down { color: #9f9f9f; }
 
 /*
 	Misc
 */
+.img-thumbnail { padding: 3px; }
+
 .no-padding { padding: 0 !important; margin: 0 !important; }
